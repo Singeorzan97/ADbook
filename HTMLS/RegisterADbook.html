@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADbookRegister</title>
+    <link rel="stylesheet" href="../CSS/RegisterADbook.css">
+    <link rel="icon" href="../IMGS/Icon.png">
+</head>
+
+<div id="ADnavresp">
+    <a href="../HTMLS/ADbook.html"><img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+    <img onclick="image()" class="Burger" src="../IMGS/burger4.svg" alt="logo">
+
+</div>
+
+<nav id="NavMenu" class="Nav hidden">
+    <a href="../HTMLS/ADbook.html">Home</a>
+    <a href="">Our Services</a>
+    <a href="">We Are</a>
+    <a href="../HTMLS/RegisterADbook.html">Register</a>
+    <a href="../HTMLS/ContactUs.html">Contact Us</a>
+    <a href="../HTMLS/ADbook.html">Login</a>
+    <a href="">Free Trial</a>
+</nav>
+
+<div id="ADnav">
+    <a href="../HTMLS/ADbook.html"> <img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+    <div>
+        <a class="Home" href="../HTMLS/ADbook.html">Home</a>
+        <a href="">Our Services</a>
+        <a href=""> We Are</a>
+        <a href="../HTMLS/RegisterADbook.html">Register</a>
+        <a href="../HTMLS/ContactUs.html">Contact Us</a>
+    </div>
+    <div>
+        <a href="../HTMLS/ADbook.html">Login</a>
+        <a href="">Free Trial</a>
+    </div>
+
+</div>
+
+<div class="container">
+    <h1>Register</h1>
+    <div class="Align-Input">
+        <input oninput="RemoveError('F-name', 'F-name-Error')" id="F-name" autofocus maxlength="20" minlength="15"
+            placeholder="First Name" type="text">
+        <p id="F-name-Error"></p>
+        <input oninput="RemoveError('L-name', 'L-name-Error')" id="L-name" maxlength="20" minlength="15"
+            placeholder="Last Name" type="text">
+        <p id="L-name-Error"></p>
+        <input oninput="RemoveError('PhoneNumber', 'Phone-Error')" id="PhoneNumber" placeholder="Phone Number"
+            maxlength="12" minlength="10" type="text">
+        <p id="Phone-Error"></p>
+        <input oninput="RemoveError('Email', 'Email-Error')" id="Email" placeholder="E-mail" type="Email">
+        <p id="Email-Error"></p>
+        <input oninput="RemoveError('Pass', 'Pass-Error')" id="Pass" placeholder="Password" type="Password">
+        <p id="Pass-Error"></p>
+        <input oninput="RemoveError('ConfPass', 'Confpass-Error')" id="ConfPass" placeholder="Confirm Password"
+            type="Password">
+        <p id="Confpass-Error"></p>
+
+    </div>
+    <div class="termeni">
+        <input oninput="RemoveError('Acord', 'Cbx-Error')" id="Acord" class="Check" type="checkbox">
+        <label for="Acord">Sunt de acord cu Termenii si conditiile de utilizare a ADbook.ro</label>
+        <p class="Cbx" id="Cbx-Error"></p>
+    </div>
+    <div class="termeni">
+        <input class="Check2" id="Aboneaza" type="checkbox">
+        <label for="Aboneaza">Aboneaza-te la newsletter-ul ADbook pentru a primi cele mai bune oferte!</label>
+    </div>
+    <button id="register" onclick="Register()">Register</button>
+    <p class="Registered" id="Registered"></p>
+</div>
+
+
+</body>
+
+<script src="../JS/RegisterADbook.js">
+
+</script>
+
+</html>

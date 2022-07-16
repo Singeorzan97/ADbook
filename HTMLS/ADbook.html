@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ADbook</title>
+   <link rel="stylesheet" href="../CSS/ADbook.css">
+   <link rel="icon" href="../IMGS/Icon.png">
+</head>
+
+<body>
+
+   <div id="ADnavresp">
+      <a href="../HTMLS/ADbook.html"><img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+      <img onclick="image()" class="Burger" src="../IMGS/burger4.svg" alt="logo">
+
+   </div>
+
+   <nav id="NavMenu" class="Nav hidden">
+      <a href="../HTMLS/ADbook.html">Home</a>
+      <a href="">Our Services</a>
+      <a href="">We Are</a>
+      <a href="../HTMLS/RegisterADbook.html">Register</a>
+      <a href="../HTMLS/ContactUs.html">Contact Us</a>
+      <a href="../HTMLS/ADbook.html">Login</a>
+      <a href="">Free Trial</a>
+   </nav>
+
+   <div id="ADnav">
+      <a href=""> <img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+      <div>
+         <a class="Home" href="">Home</a>
+         <a href="">Our Services</a>
+         <a href=""> We Are</a>
+         <a href="../HTMLS/RegisterADbook.html">Register</a>
+         <a href="../HTMLS/ContactUs.html">Contact Us</a>
+      </div>
+      <div>
+         <a href="../HTMLS/ADbook.html">Login</a>
+         <a href="">Free Trial</a>
+      </div>
+   </div>
+
+
+
+
+   </div>
+   <section>
+      <div class="Gradient">
+         <h2>Booking made easy with us</h2>
+
+         <button class="FreeButton">TRY FOR FREE 30 DAYS</button>
+      </div>
+      <div class="LogIn">
+         <input oninput="RemoveError('MailPhone', 'MailPhone-Error')" id="MailPhone" autofocus placeholder="E-mail"
+            type="text">
+         <p id="MailPhone-Error"></p>
+         <input oninput="RemoveError('Password', 'Password-Error')" id="Password" placeholder="Password"
+            type="password">
+         <p id="Password-Error"></p>
+         <button onclick="Login()" class="LoginButton">Login</button>
+         <div class="MessageColor" id="SuccesMessage"></div>
+      </div>
+
+   </section>
+
+
+
+
+
+
+
+</body>
+<script src="../JS/ADbook.js"></script>
+
+</html>

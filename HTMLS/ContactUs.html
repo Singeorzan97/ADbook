@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/HeaderC.css">
+    <link rel="icon" href="../IMGS/Icon.png">
+</head>
+
+<body>
+
+    <div id="ADnavresp">
+        <a href="../HTMLS/ADbook.html"><img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+        <img onclick="image()" class="Burger" src="../IMGS/burger4.svg" alt="logo">
+    </div>
+
+    <nav id="NavMenu" class="Nav hidden">
+        <a href="../HTMLS/ADbook.html">Home</a>
+        <a href="">Our Services</a>
+        <a href="">We Are</a>
+        <a href="../HTMLS/RegisterADbook.html">Register</a>
+        <a href="../HTMLS/ContactUs.html">Contact Us</a>
+        <a href="../HTMLS/ADbook.html">Login</a>
+        <a href="">Free Trial</a>
+    </nav>
+
+    <div id="ADnav">
+        <a href="../HTMLS/ADbook.html"><img class="Logo" src="../IMGS/ADbook (2).png" alt="logo"></a>
+        <div class="Link">
+            <a class="Home" href="../HTMLS/ADbook.html">Home</a>
+            <a href="">Our Services</a>
+            <a href=""> We Are</a>
+            <a href="../HTMLS/RegisterADbook.html">Register</a>
+            <a href="../HTMLS/ContactUs.html">Contact Us</a>
+        </div>
+        <div class="Menu"> <a class="Sign" href="../HTMLS/ADbook.html">Login</a>
+            <a href="">Free Trial</a>
+        </div>
+
+    </div>
+
+    <h1>Get In Touch</h1>
+    <h4 class="Question">Do you have a question? Send us a message!</h4>
+    <div class="Align">
+        <input oninput="RemoveError('F-name', 'F-name-Error')" id="F-name" autofocus placeholder="First Name"
+            type="text">
+        <p id="F-name-Error"></p>
+        <input oninput="RemoveError('L-name', 'L-name-Error')" id="L-name" placeholder="Last Name" type="text">
+        <p id="L-name-Error"></p>
+        <input oninput="RemoveError('Email', 'Email-Error')" id="Email" placeholder="Email" type="Email">
+        <p id="Email-Error"></p>
+        <input oninput="RemoveError('Subject', 'Subject-Error')" id="Subject" placeholder="Subject" type="text">
+        <p id="Subject-Error"></p>
+    </div>
+    <div class="TextareaAlign">
+        <textarea oninput="RemoveError('Message', 'Message-Error')" placeholder="Send us a message..."
+            id="Message"></textarea>
+        <p id="Message-Error"></p>
+    </div>
+    <div class="Button"><button onclick="SendMessage()">Send message</button></div>
+    <p class="MessageUs" id="MessageUs">
+    </p>
+
+</body>
+
+
+<script src="../JS/HeaderC.js">
+</script>
+
+</html>
